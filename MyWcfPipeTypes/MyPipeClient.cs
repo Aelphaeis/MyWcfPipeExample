@@ -16,7 +16,7 @@ namespace MyWcfPipeTypes
         
         public MyPipeClient()
         {
-            myServiceFactory = new ChannelFactory<IMyService>(new NetNamedPipeBinding(), new EndpointAddress(Constants.myPipeService + @"/" + Constants.myPipeServiceName + 2) );
+            myServiceFactory = new ChannelFactory<IMyService>(new NetNamedPipeBinding(), new EndpointAddress(Constants.myPipeService + @"/" + Constants.myPipeServiceName) );
         }
 
         public String Hello(String Name)
